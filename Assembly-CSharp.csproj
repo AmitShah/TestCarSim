@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BlinkEffect\BlinkText.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -91,6 +92,30 @@
      <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\CreateGround.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Configuration.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\Algorithm\Core.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\Algorithm\Data.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\Algorithm\Initialize.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\Algorithm\Result.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\Collections.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\ConvexFace.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\DataModel.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\MathHelper.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\ConvexHull\ObjectManager.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\IVertex.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Triangulation.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Triangulation\DelaunayTrianglationInternal.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Triangulation\DelaunayTriangulation.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Triangulation\TriangulationCell.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Triangulation\VoronoiEdge.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\MIConvexHull\Triangulation\VoronoiMesh.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\Math3d.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\Triangulator.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\Voronoi.cs" />
+     <Compile Include="Assets\Scripts\Voronoi\vertex.cs" />
      <Compile Include="Assets\Simulator\Scripts\Axle.cs" />
      <Compile Include="Assets\Simulator\Scripts\Camera2D.cs" />
      <Compile Include="Assets\Simulator\Scripts\Car.cs" />
@@ -103,6 +128,7 @@
      <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\BlinkEffect\blink.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
      <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
@@ -133,6 +159,7 @@
      <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\Resources\Fonts\alpha_taurus\ataurus.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
