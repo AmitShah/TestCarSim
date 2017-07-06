@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 48e46bc915d6e4a2998e2fce72f8543e
+timeCreated: 1499330127
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AccCofre
+    100002: Carroceria
+    100004: DefDelantera
+    100006: DefTrasera
+    100008: Eje Del
+    100010: Eje Tras
+    100012: Escape
+    100014: //RootNode
+    100016: Lamp
+    100018: Lamp.001
+    100020: LlantasDel
+    100022: LlantasTras
+    100024: LucesDelanteras
+    100026: LucesLat
+    100028: LucesTraseras.001
+    100030: ParrillaDelantera
+    100032: ParrillaLatInf
+    100034: ParrillasPuer
+    100036: ParrillasPuer_MeshPart0
+    100038: ParrillasPuer_MeshPart1
+    100040: ParrillaTrasera
+    100042: Plano.001
+    100044: Suelo
+    100046: Texto
+    100048: TubosLat
+    100050: Ventanas
+    100052: VentanaTrasera
+    100054: VentanaTrasera.001
+    100056: VentanaTrasera.002
+    400000: AccCofre
+    400002: Carroceria
+    400004: DefDelantera
+    400006: DefTrasera
+    400008: Eje Del
+    400010: Eje Tras
+    400012: Escape
+    400014: //RootNode
+    400016: Lamp
+    400018: Lamp.001
+    400020: LlantasDel
+    400022: LlantasTras
+    400024: LucesDelanteras
+    400026: LucesLat
+    400028: LucesTraseras.001
+    400030: ParrillaDelantera
+    400032: ParrillaLatInf
+    400034: ParrillasPuer
+    400036: ParrillasPuer_MeshPart0
+    400038: ParrillasPuer_MeshPart1
+    400040: ParrillaTrasera
+    400042: Plano.001
+    400044: Suelo
+    400046: Texto
+    400048: TubosLat
+    400050: Ventanas
+    400052: VentanaTrasera
+    400054: VentanaTrasera.001
+    400056: VentanaTrasera.002
+    2300000: AccCofre
+    2300002: Carroceria
+    2300004: DefDelantera
+    2300006: DefTrasera
+    2300008: Eje Del
+    2300010: Eje Tras
+    2300012: Escape
+    2300014: LlantasDel
+    2300016: LlantasTras
+    2300018: LucesDelanteras
+    2300020: LucesLat
+    2300022: LucesTraseras.001
+    2300024: ParrillaDelantera
+    2300026: ParrillaLatInf
+    2300028: ParrillasPuer_MeshPart0
+    2300030: ParrillasPuer_MeshPart1
+    2300032: ParrillaTrasera
+    2300034: Plano.001
+    2300036: Suelo
+    2300038: Texto
+    2300040: TubosLat
+    2300042: Ventanas
+    2300044: VentanaTrasera
+    2300046: VentanaTrasera.001
+    2300048: VentanaTrasera.002
+    3300000: AccCofre
+    3300002: Carroceria
+    3300004: DefDelantera
+    3300006: DefTrasera
+    3300008: Eje Del
+    3300010: Eje Tras
+    3300012: Escape
+    3300014: LlantasDel
+    3300016: LlantasTras
+    3300018: LucesDelanteras
+    3300020: LucesLat
+    3300022: LucesTraseras.001
+    3300024: ParrillaDelantera
+    3300026: ParrillaLatInf
+    3300028: ParrillasPuer_MeshPart0
+    3300030: ParrillasPuer_MeshPart1
+    3300032: ParrillaTrasera
+    3300034: Plano.001
+    3300036: Suelo
+    3300038: Texto
+    3300040: TubosLat
+    3300042: Ventanas
+    3300044: VentanaTrasera
+    3300046: VentanaTrasera.001
+    3300048: VentanaTrasera.002
+    4300000: VentanaTrasera.002
+    4300002: Carroceria
+    4300004: TubosLat
+    4300006: Ventanas
+    4300008: VentanaTrasera
+    4300010: DefDelantera
+    4300012: ParrillasPuer_MeshPart0
+    4300014: ParrillasPuer_MeshPart1
+    4300016: ParrillaDelantera
+    4300018: LucesDelanteras
+    4300020: AccCofre
+    4300022: DefTrasera
+    4300024: Escape
+    4300026: Plano.001
+    4300028: LucesLat
+    4300030: LlantasDel
+    4300032: ParrillaLatInf
+    4300034: Eje Del
+    4300036: Eje Tras
+    4300038: Suelo
+    4300040: LlantasTras
+    4300042: ParrillaTrasera
+    4300044: LucesTraseras.001
+    4300046: Texto
+    4300048: VentanaTrasera.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

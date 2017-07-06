@@ -171,15 +171,15 @@ public class Car : MonoBehaviour {
 			Brake = 0;
 			EBrake = 0;
 
-			if (Input.GetKey (KeyCode.UpArrow)) {
+			if (Input.GetKey(KeyCode.JoystickButton11)||  Input.GetKey (KeyCode.UpArrow) ) {
 				Throttle = 1;
 
-			} else if (Input.GetKey (KeyCode.DownArrow)) { 
+			} else if ( Input.GetAxis("Vertical01") < -0.3f ||  Input.GetKey (KeyCode.DownArrow)) { 
 				//Brake = 1;
 				Throttle = -1;
 			} 
 
-			if (Input.GetKey (KeyCode.Space)) {
+			if (Input.GetKey(KeyCode.JoystickButton10) || Input.GetKey (KeyCode.Space)) {
 				EBrake = 1;
 //				CurrentEBRakeGripRatioRear = Mathf.Lerp (CurrentEBRakeGripRatioRear, EBrakeGripRatioRear, -0.005f);
 //				CurrentEBRakeGripRatioFront = Mathf.Lerp (CurrentEBRakeGripRatioFront, EBrakeGripRatioFront, -0.005f);
@@ -190,10 +190,10 @@ public class Car : MonoBehaviour {
 			}
 
 			float steerInput = 0;
-			if(Input.GetKey(KeyCode.LeftArrow))	{
+			if(Input.GetAxis("Horizontal01") < -0.3f || Input.GetKey(KeyCode.LeftArrow))	{
 				steerInput = 1;
 			}
-			else if(Input.GetKey(KeyCode.RightArrow)) {
+			else if(Input.GetAxis("Horizontal01") > 0.3f ||  Input.GetKey(KeyCode.RightArrow)) {
 				steerInput = -1;
 			}
 
@@ -213,6 +213,13 @@ public class Car : MonoBehaviour {
 			// Set front axle tires rotation
 			AxleFront.TireRight.transform.localRotation = Quaternion.Euler(0, 0, Mathf.Rad2Deg * SteerAngle);
 			AxleFront.TireLeft.transform.localRotation = Quaternion.Euler(0, 0, Mathf.Rad2Deg * SteerAngle);
+
+
+
+
+
+
+
 		}			
 
 
@@ -452,7 +459,148 @@ public class Car : MonoBehaviour {
 
             GUI.Label(new Rect(5, 525, 300, 20), "AxleF Torque: " + AxleFront.Torque.ToString());
             GUI.Label(new Rect(5, 545, 300, 20), "AxleR Torque: " + AxleRear.Torque.ToString());
-        }
+
+
+
+
+			GUI.Label( new Rect(20,20,400,20), "Active Joystick: " + Input.GetJoystickNames()[0] + ".");
+
+			float yOffset = 40.0f;
+			int buttonIndex = 0;
+
+			if(Input.GetKey(KeyCode.JoystickButton0)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Select");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Select");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton1)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Left Joystick Press");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Left Joystick Press");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton2)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Right Joystick Press");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Right Joystick Press");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton3)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Start");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Start");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton4)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: D-Pad Up");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: D-Pad Up");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton5)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: D-Pad Right");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: D-Pad Right");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton6)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: D-Pad Down");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: D-Pad Down");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton7)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: D-Pad Left");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: D-Pad Left");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton8)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Left Trigger");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Left Trigger");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton9)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Right Trigger");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Right Trigger");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton10)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Left Bumper");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Left Bumper");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton11)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Right Bumper");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Right Bumper");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton12)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Green / Triangle / Upward");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Green / Triangle / Upward");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton13)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Red / Circle / Rightward");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Red / Circle / Rightward");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton14)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Blue / X / Downward");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Blue / X / Downward");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			if(Input.GetKey(KeyCode.JoystickButton15)) {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " on: Pink / Square / Leftward");
+			} else {
+				GUI.Label (new Rect (20, yOffset, 500, 20), "Joy button " + buttonIndex.ToString() + " off: Pink / Square / Leftward");
+			}
+			yOffset += 20.0f;
+			buttonIndex++;
+
+			GUI.Label (new Rect (20, yOffset, 500, 20), "Left Thumbstick: " + Input.GetAxis("Horizontal01").ToString("f1") + "," + Input.GetAxis("Vertical01").ToString("f1"));
+			yOffset += 20.0f;
+			GUI.Label (new Rect (20, yOffset, 500, 20), "Rite Thumbstick: " + Input.GetAxis("Horizontal02").ToString("f1") + "," + Input.GetAxis("Vertical02").ToString("f1"));
+		} // End Playstation 3 controller
+        
 	}
 
 }
